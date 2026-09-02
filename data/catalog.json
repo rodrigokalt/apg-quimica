@@ -1,0 +1,243 @@
+[
+  {
+    "id": "APG-SOLV-001",
+    "name": "Acetonitrile Ultra-Pure (HPLC / Spectroscopic)",
+    "slug": "acetonitrile-ultra-pure",
+    "casNumber": "75-05-8",
+    "category": "specialty-solvents",
+    "purityGrade": "HPLC / LC-MS Grade (≥99.9%)",
+    "applications": [
+      "Ultra-High Performance Liquid Chromatography (UHPLC)",
+      "Oligonucleotide Synthesis",
+      "Spectrophotometric Analysis",
+      "Pharmaceutical API Quality Control"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-75-05-8-Acetonitrile.pdf",
+    "formula": "C2H3N",
+    "molecularWeight": "41.05 g/mol",
+    "unNumber": "UN 1648",
+    "description": "High transmission in low UV range with exceptionally low baseline drift and trace non-volatile residue, engineered for critical analytical and pharmaceutical manufacturing protocols.",
+    "hazardStatements": [
+      "H225: Highly flammable liquid and vapour",
+      "H302 + H312 + H332: Harmful if swallowed, in contact with skin or if inhaled",
+      "H319: Causes serious eye irritation"
+    ],
+    "storageTemp": "Store between +15°C to +25°C under dry inert blanket",
+    "packageSizes": ["4 x 4L Glass Winchester", "20L Stainless Steel Returnable Drum", "200L High-Purity Steel Drum", "1000L Intermediate Bulk Container (IBC)"],
+    "complianceStandards": ["ISO 9001:2015", "REACH Registered", "ACS Monograph compliant"]
+  },
+  {
+    "id": "APG-SOLV-002",
+    "name": "Anhydrous Tetrahydrofuran (THF, Inhibitor-Free)",
+    "slug": "anhydrous-tetrahydrofuran-inhibitor-free",
+    "casNumber": "109-99-9",
+    "category": "specialty-solvents",
+    "purityGrade": "Anhydrous Max Dry (≤10 ppm H2O, ≥99.9%)",
+    "applications": [
+      "Organometallic Grignard Reactions",
+      "Polymer Synthesis & Processing",
+      "Lithium-ion Electrolyte Formulations",
+      "Medicinal Chemistry Couplings"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-109-99-9-THF-Anhydrous.pdf",
+    "formula": "C4H8O",
+    "molecularWeight": "72.11 g/mol",
+    "unNumber": "UN 2056",
+    "description": "Ultra-dry THF packaged under strict nitrogen atmosphere in hermetic septum containers or pressurizable returnable canisters to guarantee ultra-low moisture below 10 ppm.",
+    "hazardStatements": [
+      "H225: Highly flammable liquid and vapour",
+      "H319: Causes serious eye irritation",
+      "H335: May cause respiratory irritation",
+      "H351: Suspected of causing cancer"
+    ],
+    "storageTemp": "Store between +2°C to +8°C under dry argon or nitrogen blanket",
+    "packageSizes": ["1L Septum Sealed Bottle", "20L Sure/Pac™ Pressure Dispenser", "200L Sealed Steel Drum"],
+    "complianceStandards": ["ISO 9001:2015", "REACH Registered"]
+  },
+  {
+    "id": "APG-SOLV-003",
+    "name": "Dimethyl Sulfoxide BioGrade (DMSO)",
+    "slug": "dimethyl-sulfoxide-biograde",
+    "casNumber": "67-68-5",
+    "category": "specialty-solvents",
+    "purityGrade": "Ph. Eur. / USP Grade (≥99.9%)",
+    "applications": [
+      "Cryopreservation of Cell Cultures & Stem Cells",
+      "High-Throughput Drug Screening Assays",
+      "Peptide Synthesis Solvation",
+      "Topical Drug Delivery Formulations"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-67-68-5-DMSO-BioGrade.pdf",
+    "formula": "C2H6OS",
+    "molecularWeight": "78.13 g/mol",
+    "unNumber": "Non-regulated for transport",
+    "description": "Low endotoxin BioGrade DMSO verified free of DNase, RNase, and protease activity, with rigorous heavy metal testing (< 0.1 ppm) for sensitive life science applications.",
+    "hazardStatements": [
+      "Combustible liquid; avoid contact with skin due to rapid systemic penetration"
+    ],
+    "storageTemp": "Store between +15°C to +30°C in airtight containers protected from light",
+    "packageSizes": ["500mL Sterile Glass Bottle", "2.5L Amber Bottle", "25L HDPE Drum", "200L Poly Drum"],
+    "complianceStandards": ["USP/EP Grade", "cGMP Manufactured", "FDA DMF Filed"]
+  },
+  {
+    "id": "APG-ELEC-001",
+    "name": "Isopropanol VLSI Ultra-Trace Metal Grade (IPA)",
+    "slug": "isopropanol-vlsi-ultra-trace",
+    "casNumber": "67-63-0",
+    "category": "electronic-chemicals",
+    "purityGrade": "VLSI Semiconductor Grade (≤1 ppb Metal Impurities, ≥99.9%)",
+    "applications": [
+      "Semiconductor Silicon Wafer Drying (Marangoni Process)",
+      "Photolithography Substrate Preparation",
+      "MEMS Device Fabrication",
+      "Cleanroom Class 1/10 Component Cleaning"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-67-63-0-IPA-VLSI.pdf",
+    "formula": "C3H8O",
+    "molecularWeight": "60.10 g/mol",
+    "unNumber": "UN 1219",
+    "description": "Engineered specifically for semiconductor fabs and advanced electronics packaging. Particle-filtered to 0.05 µm with each metal cation guaranteed ≤ 1 part per billion (ppb).",
+    "hazardStatements": [
+      "H225: Highly flammable liquid and vapour",
+      "H319: Causes serious eye irritation",
+      "H336: May cause drowsiness or dizziness"
+    ],
+    "storageTemp": "Store in temperature-controlled flammable chemical storage (+15°C to +25°C)",
+    "packageSizes": ["4 x 4L Fluoropolymer-Lined Jugs", "200L Fluoropolymer Drum", "1000L Cleanroom Tote"],
+    "complianceStandards": ["SEMI C41-1101 Grade 4", "ISO 14644-1 Class 3 Packaging", "RoHS & WEEE Compliant"]
+  },
+  {
+    "id": "APG-ELEC-002",
+    "name": "Hydrofluoric Acid 49% Semiconductor Grade",
+    "slug": "hydrofluoric-acid-49-semi-grade",
+    "casNumber": "7664-39-3",
+    "category": "electronic-chemicals",
+    "purityGrade": "UP-SS Ultra-Pure Semi Grade (≤100 ppt Cations)",
+    "applications": [
+      "Silicon Dioxide Gate Etching",
+      "Surface Oxide Stripping & Native Oxide Removal",
+      "Photovoltaic Solar Cell Texturization",
+      "Quartz Glass Micro-machining"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-7664-39-3-HF-49-Semi.pdf",
+    "formula": "HF",
+    "molecularWeight": "20.01 g/mol",
+    "unNumber": "UN 1790",
+    "description": "Ultra-low ppt trace metal hydrofluoric acid for high-density node semiconductor lithography. Packaged in custom high-density PFA/PVDF drums under argon blanket.",
+    "hazardStatements": [
+      "H300 + H310 + H330: Fatal if swallowed, in contact with skin or if inhaled",
+      "H314: Causes severe skin burns and eye damage"
+    ],
+    "storageTemp": "Dedicated acid safety storage cabinet (+15°C to +25°C) with calcium gluconate antidote available",
+    "packageSizes": ["5L Ultra-Pure PVDF Bottle", "20L PVDF Jerrycan", "200L PFA Lined Drum"],
+    "complianceStandards": ["SEMI C7.1 Grade 5", "ISO 9001:2015", "OSHA PSM Covered"]
+  },
+  {
+    "id": "APG-PHRM-001",
+    "name": "4-Dimethylaminopyridine (DMAP)",
+    "slug": "4-dimethylaminopyridine-dmap",
+    "casNumber": "1122-58-3",
+    "category": "pharma-intermediates",
+    "purityGrade": "Pharmaceutical Reagent Grade (≥99.5%)",
+    "applications": [
+      "Acylation & Esterification Nucleophilic Catalyst",
+      "Macrolide Antibiotic Intermediate Synthesis",
+      "Protected Nucleoside Chemistry",
+      "Polyurethane Catalyst Formulation"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-1122-58-3-DMAP.pdf",
+    "formula": "C7H10N2",
+    "molecularWeight": "122.17 g/mol",
+    "unNumber": "UN 2811",
+    "description": "Highly effective nucleophilic acylation catalyst producing accelerated reaction velocities in sterically hindered alcohols and phenolic esterifications.",
+    "hazardStatements": [
+      "H301 + H311: Toxic if swallowed or in contact with skin",
+      "H315: Causes skin irritation",
+      "H318: Causes serious eye damage"
+    ],
+    "storageTemp": "Store between +15°C to +25°C tightly sealed away from acids and oxidizers",
+    "packageSizes": ["1 kg Fibre Drum", "5 kg Fibre Drum", "25 kg UN-Approved Fibre Drum with PE Liner"],
+    "complianceStandards": ["cGMP Annex 1 Compliant", "REACH Registered", "Certificate of Suitability (CEP)"]
+  },
+  {
+    "id": "APG-PHRM-002",
+    "name": "Di-tert-butyl Dicarbonate (Boc Anhydride)",
+    "slug": "di-tert-butyl-dicarbonate-boc-anhydride",
+    "casNumber": "24424-99-5",
+    "category": "pharma-intermediates",
+    "purityGrade": "Pharma Grade (≥99.0%, Low Residual Solvents)",
+    "applications": [
+      "Amine Boc-Protection in Peptide Synthesis",
+      "Active Pharmaceutical Ingredient (API) Synthesis",
+      "Bioconjugation Chemistry",
+      "Peptidomimetic Therapeutics"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-24424-99-5-Boc-Anhydride.pdf",
+    "formula": "C10H18O5",
+    "molecularWeight": "218.25 g/mol",
+    "unNumber": "UN 2929",
+    "description": "Standard reagent for protecting amino functionalities during solid-phase and solution-phase peptide synthesis, easily cleaved under mild acid conditions.",
+    "hazardStatements": [
+      "H227: Combustible liquid",
+      "H315: Causes skin irritation",
+      "H317: May cause an allergic skin reaction",
+      "H330: Fatal if inhaled"
+    ],
+    "storageTemp": "Refrigerated storage (+2°C to +8°C). Keep dry and inerted.",
+    "packageSizes": ["500g Glass Bottle", "5 kg HDPE Bottle", "25 kg Poly-Lined Steel Drum"],
+    "complianceStandards": ["cGMP Quality Control", "USP/EP Guideline Q3C Compliant"]
+  },
+  {
+    "id": "APG-CATL-001",
+    "name": "Palladium on Activated Carbon 10% (Escat™ Grade, 50% Wet)",
+    "slug": "palladium-activated-carbon-10-percent",
+    "casNumber": "7440-05-3",
+    "category": "catalysts-reagents",
+    "purityGrade": "Precious Metal Catalyst (10% Pd w/w dry basis)",
+    "applications": [
+      "Catalytic Hydrogenation of Alkenes and Nitro Compounds",
+      "Reductive Debenzylation in API Manufacturing",
+      "Fine Chemical Selective Reductions",
+      "Cross-Coupling Flow Chemistry"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-7440-05-3-Pd-C-10.pdf",
+    "formula": "Pd/C",
+    "molecularWeight": "106.42 g/mol (Pd)",
+    "unNumber": "UN 1325 (Dry formulation) / Wet not regulated",
+    "description": "Engineered dispersion of zero-valent palladium nano-clusters on high-surface-area activated wood charcoal. Supplied water-wet (approx. 50% water) to mitigate pyrophoric pyrophoricity during reactor charging.",
+    "hazardStatements": [
+      "H228: Flammable solid (when dry)",
+      "May ignite spontaneously in air if allowed to dry completely in presence of flammable solvent vapours"
+    ],
+    "storageTemp": "Store sealed at +15°C to +25°C. Never allow water content to evaporate.",
+    "packageSizes": ["100g Sealed Container", "500g Glass Bottle", "2.5 kg Pail", "10 kg Returnable Pail"],
+    "complianceStandards": ["ISO 9001:2015", "Conflict Minerals Free certified (RMI)"]
+  },
+  {
+    "id": "APG-CATL-002",
+    "name": "Titanium(IV) Chloride Anhydrous (Titania Ultra-Pure)",
+    "slug": "titanium-tetrachloride-anhydrous",
+    "casNumber": "7550-45-0",
+    "category": "catalysts-reagents",
+    "purityGrade": "Electronic & Catalyst Grade (≥99.9%)",
+    "applications": [
+      "Ziegler-Natta Polyolefin Polymerization Catalysis",
+      "Lewis Acid Organic Synthesis & Mukaiyama Aldol",
+      "Atomic Layer Deposition (ALD) TiO2 Thin Films",
+      "Titanium Metal Sponge Precursor"
+    ],
+    "safetySheetUrl": "/docs/sds/SDS-APG-7550-45-0-TiCl4.pdf",
+    "formula": "TiCl4",
+    "molecularWeight": "189.68 g/mol",
+    "unNumber": "UN 1838",
+    "description": "Colorless fuming anhydrous liquid reacting vigorously with moisture to produce dense white clouds of TiO2 and HCl. Critical Lewis acid catalyst for high-stereoselectivity couplings.",
+    "hazardStatements": [
+      "H314: Causes severe skin burns and eye damage",
+      "H330: Fatal if inhaled",
+      "EUH014: Reacts violently with water"
+    ],
+    "storageTemp": "Store in dry nitrogen cabinet (+15°C to +25°C) with secondary containment",
+    "packageSizes": ["1L Glass Ampoule", "20L Stainless Steel Cylinder", "200L High-Pressure Cylinder"],
+    "complianceStandards": ["ISO 9001:2015", "REACH Registered"]
+  }
+]
