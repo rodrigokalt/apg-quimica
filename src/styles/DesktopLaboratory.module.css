@@ -1,140 +1,313 @@
-.section {
-  padding: 100px 32px;
-  background: var(--bg-offwhite);
-  border-bottom: 1px solid var(--border-light);
+.scrollWrapper {
+  position: relative;
+  background: #1e2530; /* Deep laboratory slate dashboard */
+  color: #ffffff;
+  min-height: 260vh; /* Provides generous scroll room for pinned progression */
 }
 
-.container {
-  max-width: 1320px;
+.stickyContainer {
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  max-height: 880px;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.dashboardFrame {
+  max-width: 1340px;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 48px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(33, 40, 50, 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.headerRow {
-  margin-bottom: 48px;
+/* Left Column: Fixed Clinical Anchor */
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-.tag {
+.terminalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 12px;
+}
+
+.terminalTag {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.76rem;
   color: var(--brand-teal);
-  text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
-.title {
-  font-size: 2.5rem;
+.terminalStatus {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #25d366;
+}
+
+.liveDot {
+  width: 6px;
+  height: 6px;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #25d366;
+}
+
+.mainTitle {
+  font-size: 2.8rem;
+  line-height: 1.12;
   font-weight: 800;
-  color: var(--brand-slate);
+  color: #ffffff;
   letter-spacing: -0.025em;
-  margin-bottom: 16px;
+}
+
+.accentWord {
+  color: var(--brand-accent-blue);
 }
 
 .description {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 760px;
-  line-height: 1.65;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.photosGallery {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  grid-template-rows: 240px 240px;
-  gap: 16px;
-}
-
-.largePhotoCard {
-  grid-row: span 2;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-light);
-}
-
-.smallPhotoCard {
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-light);
-}
-
-.labImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-slow);
-}
-
-.largePhotoCard:hover .labImg, .smallPhotoCard:hover .labImg {
-  transform: scale(1.05);
-}
-
-.photoBadge {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  background: rgba(49, 59, 72, 0.8);
-  backdrop-filter: blur(4px);
-  color: #ffffff;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-
-.capabilitiesCol {
+/* 3-Step Telemetry Nav Buttons */
+.stepsNav {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+  margin-top: 8px;
 }
 
-.capCard {
-  background: var(--bg-clean);
-  border: 1px solid var(--border-light);
-  border-radius: 10px;
-  padding: 18px 22px;
+.stepBtn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 14px 18px;
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
 }
 
-.capCard:hover {
-  transform: translateX(6px);
-  border-color: var(--brand-teal);
+.stepBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(95, 187, 244, 0.4);
 }
 
-.capIndex {
+.activeStepBtn {
+  background: rgba(48, 175, 184, 0.15) !important;
+  border-color: var(--brand-teal) !important;
+  box-shadow: 0 4px 20px rgba(48, 175, 184, 0.2);
+}
+
+.stepNum {
   font-family: var(--font-mono);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--brand-teal);
-  background: rgba(48, 175, 184, 0.1);
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  background: rgba(48, 175, 184, 0.15);
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.capText {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--brand-slate);
-  line-height: 1.5;
+.activeStepBtn .stepNum {
+  background: var(--brand-teal);
+  color: #ffffff;
+}
+
+.stepInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.stepDesc {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-mono);
+  margin-top: 2px;
+}
+
+.scrollHint {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* Right Column: Dynamic Data Dashboard Cards */
+.rightCol {
+  position: relative;
+  height: 520px;
+  width: 100%;
+}
+
+.visualPane {
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 23, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0.97) translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.5s var(--ease-custom), transform 0.5s var(--ease-custom);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.activeVisualPane {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+.paneHeader {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paneTag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--brand-accent-blue);
+  text-transform: uppercase;
+}
+
+.paneMetric {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #25d366;
+}
+
+.paneMediaWrap {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+.panePhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.paneBody {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.dataBox {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dataKey {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+
+.dataVal {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--brand-teal);
+  margin-top: 2px;
+}
+
+/* Simulated Aging Graph */
+.graphContainer {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.graphBarRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.graphLabel {
+  width: 70px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.graphTrack {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.graphFillTeal {
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand-teal) 0%, var(--brand-accent-blue) 100%);
+  border-radius: 4px;
 }

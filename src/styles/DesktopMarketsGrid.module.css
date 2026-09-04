@@ -1,11 +1,11 @@
 .section {
-  padding: 100px 32px;
-  background: var(--bg-offwhite);
+  padding: 110px 32px;
+  background: var(--bg-clean);
   border-bottom: 1px solid var(--border-light);
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1340px;
   margin: 0 auto;
 }
 
@@ -13,39 +13,41 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   gap: 32px;
 }
 
 .sectionTag {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--brand-teal);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin-bottom: 8px;
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 800;
   color: var(--brand-slate);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
 .sectionSubtitle {
   font-size: 1.05rem;
   color: var(--text-muted);
-  max-width: 540px;
+  max-width: 520px;
   line-height: 1.6;
 }
 
+/* Filter tabs */
 .filterTabs {
   display: flex;
   gap: 8px;
-  background: var(--bg-clean);
-  padding: 4px;
+  background: var(--bg-offwhite);
+  padding: 5px;
   border-radius: 8px;
   border: 1px solid var(--border-light);
   width: fit-content;
@@ -55,7 +57,7 @@
 .tabBtn {
   padding: 8px 18px;
   border-radius: 6px;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 600;
   color: var(--brand-slate);
   transition: all var(--transition-fast);
@@ -72,68 +74,113 @@
   box-shadow: var(--shadow-sm);
 }
 
-/* Asymmetric Grid: Alternating spans */
-.marketsGrid {
+/* Dense Masonry-Style CSS Grid */
+.masonryGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-auto-rows: minmax(360px, auto);
+  grid-auto-flow: dense;
+  gap: 24px;
 }
 
 @media (max-width: 1100px) {
-  .marketsGrid {
+  .masonryGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Card Default State: Monochrome (Slate) */
 .card {
-  background: var(--bg-clean);
-  border: 1px solid var(--border-light);
+  background: #ffffff;
+  border: 1px solid rgba(49, 59, 72, 0.2);
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+  position: relative;
+  transition: border-color 0.4s var(--ease-custom), 
+              background-color 0.4s var(--ease-custom), 
+              box-shadow 0.4s var(--ease-custom), 
+              transform 0.4s var(--ease-custom);
+  cursor: crosshair; /* Custom crosshair micro-interaction */
 }
 
+/* Featured cards in masonry spanning wider */
+.cardSpan2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 1100px) {
+  .cardSpan2 {
+    grid-column: span 1;
+  }
+}
+
+/* Card Hover State: Brand Teal border, #fcfcfc background */
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
   border-color: var(--brand-teal);
+  background-color: #fcfcfc;
+  box-shadow: 0 16px 36px rgba(48, 175, 184, 0.18);
+  transform: translateY(-4px);
 }
 
 .imageWrap {
   position: relative;
-  height: 200px;
+  height: 180px;
   overflow: hidden;
-  background: #eaecef;
+  background: #2b3541;
 }
 
 .marketImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--transition-slow);
+  filter: grayscale(0.85); /* Monochrome default */
+  transition: filter 0.5s var(--ease-custom), transform 0.6s var(--ease-custom);
 }
 
 .card:hover .marketImg {
-  transform: scale(1.06);
+  filter: grayscale(0); /* Full color on hover */
+  transform: scale(1.05);
 }
 
-.marketBadge {
+.sectorBadge {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(49, 59, 72, 0.85);
+  background: rgba(49, 59, 72, 0.9);
   backdrop-filter: blur(4px);
   color: #ffffff;
   padding: 4px 10px;
   border-radius: 4px;
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  transition: background-color var(--transition-fast);
+}
+
+.card:hover .sectorBadge {
+  background: var(--brand-teal-dark);
+}
+
+.crosshairHint {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--brand-slate);
+  padding: 2px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.card:hover .crosshairHint {
+  opacity: 1;
 }
 
 .cardBody {
@@ -144,57 +191,111 @@
 }
 
 .cardTitle {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.35rem;
+  font-weight: 800;
   color: var(--brand-slate);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  transition: color var(--transition-fast);
+}
+
+.card:hover .cardTitle {
+  color: var(--brand-teal-dark);
 }
 
 .cardDesc {
   font-size: 0.92rem;
   color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 20px;
-  flex: 1;
+  margin-bottom: 16px;
 }
 
-.keywordsWrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 20px;
+/* Staggered Sliding Applications List */
+.applicationsWrap {
+  margin-top: auto;
+  border-top: 1px dashed rgba(49, 59, 72, 0.15);
+  padding-top: 14px;
 }
 
-.keywordChip {
+.appLabel {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-  background: rgba(48, 175, 184, 0.08);
+  font-size: 0.75rem;
+  font-weight: 700;
   color: var(--brand-teal-dark);
-  border: 1px solid rgba(48, 175, 184, 0.2);
-  padding: 3px 8px;
-  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.applicationsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.appItem {
+  font-size: 0.84rem;
+  color: var(--brand-slate);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.35;
+  transform: translateY(6px);
+  transition: opacity 0.35s var(--ease-custom), transform 0.35s var(--ease-custom);
+}
+
+.appDot {
+  width: 5px;
+  height: 5px;
+  background: var(--brand-teal);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Staggered delay on hover: 50ms per list item */
+.card:hover .appItem {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover .appItem:nth-child(1) {
+  transition-delay: 50ms;
+}
+
+.card:hover .appItem:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.card:hover .appItem:nth-child(3) {
+  transition-delay: 150ms;
+}
+
+.card:hover .appItem:nth-child(4) {
+  transition-delay: 200ms;
 }
 
 .cardFooter {
-  border-top: 1px solid var(--border-light);
-  padding-top: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
 }
 
-.consultBtn {
-  color: var(--brand-teal);
-  font-size: 0.88rem;
+.quoteTriggerBtn {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
   font-weight: 700;
+  color: var(--brand-teal-dark);
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: gap var(--transition-fast), color var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
-.card:hover .consultBtn {
-  color: var(--brand-teal-dark);
+.card:hover .quoteTriggerBtn {
+  color: var(--brand-teal);
   gap: 10px;
 }

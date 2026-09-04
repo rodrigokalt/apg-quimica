@@ -30,21 +30,21 @@ export function DesktopMarketsGrid({ onSelectMarket }: DesktopMarketsGridProps) 
       <div className={styles.container}>
         <div className={styles.headerRow}>
           <div>
-            <div className={styles.sectionTag}>Portafolio B2B & Soluciones Técnicas</div>
-            <h2 className={styles.sectionTitle}>12 Mercados Industriales Atendidos</h2>
+            <div className={styles.sectionTag}>Matriz de Soluciones Químicas</div>
+            <h2 className={styles.sectionTitle}>12 Sectores Industriales</h2>
           </div>
           <p className={styles.sectionSubtitle}>
-            Abastecemos materias primas certificadas y formulaciones personalizadas para satisfacer requerimientos técnicos rigurosos en los principales sectores productivos de México.
+            Catálogo técnico de formulaciones especializadas. Pase el cursor sobre cada ficha técnica para inspeccionar aplicaciones específicas por sector.
           </p>
         </div>
 
-        <div className={styles.filterTabs} role="tablist" aria-label="Filtrar mercados">
+        <div className={styles.filterTabs} role="tablist" aria-label="Filtrar sectores industriales">
           <button
             type="button"
             className={`${styles.tabBtn} ${filter === 'all' ? styles.activeTab : ''}`}
             onClick={() => setFilter('all')}
           >
-            Todos los Mercados (12)
+            Todos los Sectores (12)
           </button>
           <button
             type="button"
@@ -58,55 +58,77 @@ export function DesktopMarketsGrid({ onSelectMarket }: DesktopMarketsGridProps) 
             className={`${styles.tabBtn} ${filter === 'recubrimientos' ? styles.activeTab : ''}`}
             onClick={() => setFilter('recubrimientos')}
           >
-            Pinturas & Polímeros
+            Pinturas, Ceras & Cuero
           </button>
           <button
             type="button"
             className={`${styles.tabBtn} ${filter === 'cuidado' ? styles.activeTab : ''}`}
             onClick={() => setFilter('cuidado')}
           >
-            Agro, Agua & Cuidado
+            Agroquímica, Agua & Personal Care
           </button>
         </div>
 
-        <div className={styles.marketsGrid}>
-          {filteredMarkets.map((market: MarketIndustry) => (
-            <article key={market.id} className={styles.card}>
-              <div className={styles.imageWrap}>
-                <img
-                  src={market.image}
-                  alt={`Materia prima y especialidad química para ${market.name}`}
-                  className={styles.marketImg}
-                  width={400}
-                  height={200}
-                  loading="lazy"
-                />
-                <span className={styles.marketBadge}>Sector Industrial</span>
-              </div>
+        <div className={styles.masonryGrid}>
+          {filteredMarkets.map((market: MarketIndustry, idx: number) => {
+            // Asymmetric masonry span for first and sixth card
+            const isSpan2 = filter === 'all' && (idx === 0 || idx === 6);
 
-              <div className={styles.cardBody}>
-                <h3 className={styles.cardTitle}>{market.name}</h3>
-                <p className={styles.cardDesc}>{market.description}</p>
-
-                <div className={styles.keywordsWrap}>
-                  {market.keywords.map(kw => (
-                    <span key={kw} className={styles.keywordChip}>{kw}</span>
-                  ))}
+            return (
+              <article
+                key={market.id}
+                className={`${styles.card} ${isSpan2 ? styles.cardSpan2 : ''}`}
+                onClick={() => onSelectMarket(market.id)}
+              >
+                <div className={styles.imageWrap}>
+                  <img
+                    src={market.image}
+                    alt={`Materia prima y especialidad química para ${market.name}`}
+                    className={styles.marketImg}
+                    width={isSpan2 ? 800 : 400}
+                    height={180}
+                    loading="lazy"
+                  />
+                  <span className={styles.sectorBadge}>{market.id}</span>
+                  <span className={styles.crosshairHint}>Target [⌖]</span>
                 </div>
 
-                <div className={styles.cardFooter}>
-                  <button
-                    type="button"
-                    onClick={() => onSelectMarket(market.id)}
-                    className={styles.consultBtn}
-                  >
-                    <span>Solicitar Asesoría Técnica</span>
-                    <span aria-hidden="true">→</span>
-                  </button>
+                <div className={styles.cardBody}>
+                  <h3 className={styles.cardTitle}>{market.name}</h3>
+                  <p className={styles.cardDesc}>{market.description}</p>
+
+                  <div className={styles.applicationsWrap}>
+                    <span className={styles.appLabel}>Aplicaciones Industriales Clave:</span>
+                    <ul className={styles.applicationsList}>
+                      {market.applications.map((app, appIdx) => (
+                        <li key={appIdx} className={styles.appItem}>
+                          <span className={styles.appDot} aria-hidden="true" />
+                          <span>{app}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className={styles.cardFooter}>
+                    <span className="tech-mono" style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                      Ficha Técnica: APG-{market.id.substring(0, 4).toUpperCase()}
+                    </span>
+                    <button
+                      type="button"
+                      className={styles.quoteTriggerBtn}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onSelectMarket(market.id);
+                      }}
+                    >
+                      <span>Cotizar Sector</span>
+                      <span aria-hidden="true">→</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

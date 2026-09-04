@@ -4,6 +4,7 @@ export interface MarketIndustry {
   image: string;
   description: string;
   keywords: string[];
+  applications: string[];
   specs?: { label: string; value: string }[];
 }
 
@@ -171,84 +172,156 @@ export const siteData: SiteData = {
       name: "Metalurgia & Metalworking",
       image: "/images/METALWORKING.jpg",
       description: "Fluidos de transferencia térmica Antifrogen® N y Antifrogen® L, inhibidores de corrosión de grado superior y materias primas especializadas para limpieza, desengrase y maquinado de metales.",
-      keywords: ["Antifrogen N", "Antifrogen L", "Refrigeración Industrial", "Limpieza de Metales", "Inhibidores de Corrosión"]
+      keywords: ["Antifrogen N", "Antifrogen L", "Refrigeración Industrial", "Limpieza de Metales", "Inhibidores de Corrosión"],
+      applications: [
+        "Fluidos caloportadores Antifrogen® N & L",
+        "Inhibidores de corrosión para maquinado y templado",
+        "Desengrasantes y desoxidantes alcalinos/ácidos",
+        "Formulaciones para fluidos de corte y rectificado"
+      ]
     },
     {
       id: "aditivos",
       name: "Aditivos Industriales",
       image: "/images/aditivos.jpg",
       description: "Aditivos de alto desempeño para plásticos, hules y recubrimientos: retardantes de flama no halogenados, estabilizadores térmicos y protección avanzada contra degradación por luz UV y oxidación.",
-      keywords: ["Retardantes de Llama", "Estabilizadores Térmicos", "Filtros UV", "Antioxidantes", "Plásticos Técnicos"]
+      keywords: ["Retardantes de Llama", "Estabilizadores Térmicos", "Filtros UV", "Antioxidantes", "Plásticos Técnicos"],
+      applications: [
+        "Retardantes de flama libres de halógenos",
+        "Estabilizadores térmicos para extrusión de polímeros",
+        "Absorbedores de radiación UV y HALS",
+        "Antioxidantes primarios y secundarios de proceso"
+      ]
     },
     {
       id: "cultivos",
       name: "Cultivos & Agroquímica",
       image: "/images/crop.jpg",
       description: "Soluciones sustentables para formulaciones agrícolas: adyuvantes de penetración, agentes de dispersión, tensoactivos para herbicidas, fungicidas, insecticidas y tratamiento de semillas.",
-      keywords: ["Protección de Cultivos", "Adyuvantes Agrícolas", "Dispersantes", "Fertilizantes", "Agroquímica Verde"]
+      keywords: ["Protección de Cultivos", "Adyuvantes Agrícolas", "Dispersantes", "Fertilizantes", "Agroquímica Verde"],
+      applications: [
+        "Adyuvantes organosiliconados y humectantes foliares",
+        "Emulsionantes y dispersantes para SC, EC y WG",
+        "Tensoactivos para tratamiento y recubrimiento de semillas",
+        "Agentes anti-deriva y mejoradores de bioeficacia"
+      ]
     },
     {
       id: "revestimientos",
       name: "Pinturas & Revestimientos",
       image: "/images/coatings.jpg",
       description: "Emulsificantes, ceras y aditivos reológicos para recubrimientos base agua y solvente: agentes humectantes, neutralizadores, dispersantes de pigmento y antiespumantes de alta eficiencia.",
-      keywords: ["Coatings", "Agentes Humectantes", "Dispersantes", "Antiespumantes", "Modificadores Reológicos"]
+      keywords: ["Coatings", "Agentes Humectantes", "Dispersantes", "Antiespumantes", "Modificadores Reológicos"],
+      applications: [
+        "Agentes dispersantes y humectantes de alto rendimiento",
+        "Antiespumantes moleculares sin cráteres",
+        "Neutralizadores de pH de bajo olor (sin amoníaco)",
+        "Modificadores de reología y resistencia al frote"
+      ]
     },
     {
       id: "ceramica",
       name: "Cerámica & Azulejos",
       image: "/images/Ceramica.jpg",
       description: "Pigmentos cerámicos de alta definición, mejoradores de molienda para optimizar consumo energético y aditivos desfloculantes y antiespumantes para barbotinas y esmaltes.",
-      keywords: ["Pigmentos Cerámicos", "Mejoradores de Molienda", "Desfloculantes", "Azulejos", "Esmaltes"]
+      keywords: ["Pigmentos Cerámicos", "Mejoradores de Molienda", "Desfloculantes", "Azulejos", "Esmaltes"],
+      applications: [
+        "Desfloculantes y fluidificantes para barbotinas",
+        "Mejoradores de molienda y ahorro energético",
+        "Pigmentos cerámicos de alta definición cromática",
+        "Ligantes y plastificantes para prensado en seco"
+      ]
     },
     {
       id: "tratamiento-agua",
       name: "Tratamiento de Aguas",
       image: "/images/tratamiento-agua.jpg",
       description: "Especialidades para aguas residuales y circuitos industriales: antiespumantes de amplio espectro, biocidas industriales y cuaternarios de amonio desinfectantes de alta eficacia.",
-      keywords: ["Antiespumantes", "Cuaternarios de Amonio", "Desinfección Industrial", "Tratamiento de Efluentes"]
+      keywords: ["Antiespumantes", "Cuaternarios de Amonio", "Desinfección Industrial", "Tratamiento de Efluentes"],
+      applications: [
+        "Antiespumantes grado industrial base silicón y libres de silicón",
+        "Cuaternarios de amonio de 5ta generación",
+        "Biocidas no oxidantes para torres de enfriamiento",
+        "Dispersantes de incrustaciones de sales inorgánicas"
+      ]
     },
     {
       id: "construccion",
       name: "Construcción Sustentable",
       image: "/images/construccion.jpg",
       description: "Materias primas para morteros, hormigones y aditivos de obra: poliglicoles, emulsiones hidrofugantes, antiespumantes y dispersantes para edificaciones eficientes y durables.",
-      keywords: ["Poliglicoles", "Aditivos de Construcción", "Hidrofugantes", "Morteros Técnicos"]
+      keywords: ["Poliglicoles", "Aditivos de Construcción", "Hidrofugantes", "Morteros Técnicos"],
+      applications: [
+        "Poliglicoles para control de retracción y fraguado",
+        "Hidrofugantes base silano/siloxano en polvo",
+        "Antiespumantes para morteros autonivelantes",
+        "Dispersantes superplastificantes de alta eficiencia"
+      ]
     },
     {
       id: "ceras",
       name: "Ceras de Alto Rendimiento",
       image: "/images/ceras.jpg",
       description: "Portafolio innovador de ceras sintéticas y semisintéticas: productos basados en cera montana, ceras de amidas micronizadas, poliolefinas y copolímeros para aplicaciones críticas.",
-      keywords: ["Cera Montana", "Ceras Micronizadas", "Poliolefinas", "Ceras de Amidas"]
+      keywords: ["Cera Montana", "Ceras Micronizadas", "Poliolefinas", "Ceras de Amidas"],
+      applications: [
+        "Ceras montana refinadas y químicamente modificadas",
+        "Ceras de amidas micronizadas para efecto mate y antibloqueo",
+        "Emulsiones de ceras poliolefínicas para empaque y papel",
+        "Lubricantes internos y externos para extrusión de PVC"
+      ]
     },
     {
       id: "pigmentos",
       name: "Pigmentos & Colorantes",
       image: "/images/pigmentos.jpg",
       description: "Pigmentos orgánicos e inorgánicos para sistemas base agua y solvente, diseñados para máxima solidez a la luz, intemperismo y estabilidad térmica en plásticos y pinturas.",
-      keywords: ["Solidez de Color", "Pigmentos Industriales", "Base Agua", "Base Solvente"]
+      keywords: ["Solidez de Color", "Pigmentos Industriales", "Base Agua", "Base Solvente"],
+      applications: [
+        "Pigmentos orgánicos de alta solidez a la intemperie",
+        "Preparaciones pigmentarias universales libres de VOC",
+        "Colorantes solubles para plásticos técnicos y fibras",
+        "Dispersiones base solvente para recubrimientos industriales"
+      ]
     },
     {
       id: "cuero-calzado",
       name: "Cuero & Calzado",
       image: "/images/Cuero-y-Calzado.jpg",
       description: "Química para procesamiento de cuero en todas las fases: tensoactivos desengrasantes, agentes de recurtido, neutralizantes, dispersantes de tintura y formulaciones adhesivas para calzado.",
-      keywords: ["Curtiduría", "Recurtido", "Tensoactivos", "Adhesivos para Suelas"]
+      keywords: ["Curtiduría", "Recurtido", "Tensoactivos", "Adhesivos para Suelas"],
+      applications: [
+        "Tensoactivos ecológicos para desengrase y remojo",
+        "Sintanes y agentes de recurtido polimérico",
+        "Emulsiones de engrase de alta fijación y suavidad",
+        "Adhesivos de poliuretano y policloropreno para calzado"
+      ]
     },
     {
       id: "cuidado-hogar",
       name: "Cuidado del Hogar (I&I)",
       image: "/images/home-care.jpg",
       description: "Ingredientes sustentables para limpieza institucional y doméstica: surfactantes suaves 100% naturales a base de azúcar, óxidos de amina, polímeros de limpieza y biocidas.",
-      keywords: ["Home Care", "Limpieza Institucional", "Surfactantes Naturales", "Óxidos de Aminas"]
+      keywords: ["Home Care", "Limpieza Institucional", "Surfactantes Naturales", "Óxidos de Aminas"],
+      applications: [
+        "Alquilpoliglucósidos (APGs) 100% naturales derivados de azúcar",
+        "Óxidos de amina y mejoradores de perfil de espuma",
+        "Polímeros anti-redeposición y secuestrantes ecológicos",
+        "Biocidas conservadores de amplio espectro"
+      ]
     },
     {
       id: "cuidado-personal",
       name: "Cuidado Personal & Cosmética",
       image: "/images/personal-care.jpg",
       description: "Especialidades para el cuidado de la piel y cabello: emolientes sensoriales, emulsionantes, aperlantes, conservadores suaves, filtros solares y agentes acondicionadores.",
-      keywords: ["Cosmética", "Cuidado Capilar", "Emolientes", "Filtros Solares", "Personal Care"]
+      keywords: ["Cosmética", "Cuidado Capilar", "Emolientes", "Filtros Solares", "Personal Care"],
+      applications: [
+        "Emolientes sensoriales ligeros y alternativas a siliconas",
+        "Emulsionantes biomiméticos de cristal líquido",
+        "Polímeros catiónicos para acondicionamiento capilar profundo",
+        "Filtros UV y modificadores sensoriales para fotoprotección"
+      ]
     }
   ]
 };
