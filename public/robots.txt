@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apgquimica.com.mx/sitemap.xml

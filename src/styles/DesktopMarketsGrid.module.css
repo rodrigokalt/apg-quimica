@@ -1,0 +1,200 @@
+.section {
+  padding: 100px 32px;
+  background: var(--bg-offwhite);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  gap: 32px;
+}
+
+.sectionTag {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--brand-slate);
+  letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.6;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 8px;
+  background: var(--bg-clean);
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  width: fit-content;
+  margin-bottom: 36px;
+}
+
+.tabBtn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--brand-slate);
+  transition: all var(--transition-fast);
+}
+
+.tabBtn:hover {
+  background: rgba(48, 175, 184, 0.08);
+  color: var(--brand-teal-dark);
+}
+
+.activeTab {
+  background: var(--brand-teal) !important;
+  color: #ffffff !important;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Asymmetric Grid: Alternating spans */
+.marketsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 1100px) {
+  .marketsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: var(--bg-clean);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-teal);
+}
+
+.imageWrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #eaecef;
+}
+
+.marketImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover .marketImg {
+  transform: scale(1.06);
+}
+
+.marketBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(49, 59, 72, 0.85);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardBody {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-slate);
+  margin-bottom: 12px;
+}
+
+.cardDesc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.keywordsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.keywordChip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  background: rgba(48, 175, 184, 0.08);
+  color: var(--brand-teal-dark);
+  border: 1px solid rgba(48, 175, 184, 0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.cardFooter {
+  border-top: 1px solid var(--border-light);
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.consultBtn {
+  color: var(--brand-teal);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--transition-fast), color var(--transition-fast);
+}
+
+.card:hover .consultBtn {
+  color: var(--brand-teal-dark);
+  gap: 10px;
+}

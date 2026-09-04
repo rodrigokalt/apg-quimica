@@ -1,0 +1,119 @@
+.section {
+  padding: 100px 32px;
+  background: var(--bg-clean);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.topGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--brand-slate);
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--brand-teal-dark);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.paragraph {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.partnerHighlight {
+  background: rgba(48, 175, 184, 0.08);
+  border-left: 4px solid var(--brand-teal);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem;
+  color: var(--brand-slate);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.imgWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
+  height: 440px;
+}
+
+.aboutImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vmGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.vmCard {
+  background: var(--bg-offwhite);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.vmCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-teal);
+}
+
+.vmHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.vmIcon {
+  font-size: 1.5rem;
+}
+
+.vmTitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--brand-slate);
+}
+
+.vmText {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}

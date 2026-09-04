@@ -1,0 +1,350 @@
+{
+  "company": {
+    "name": "APG Química",
+    "legal_name": "Química. S.A. de C.V.",
+    "full_name": "APG Química – Química. S.A. de C.V.",
+    "experience": "Más de 20 años en la comercialización de productos químicos especializados para diferentes mercados.",
+    "brand_representation": "Representantes oficiales de Clariant (líder mundial en especialidades químicas)",
+    "tagline": "Soluciones químicas especializadas, sustentables y a la medida.",
+    "site_mode": "B2B Corporate & Technical Solutions",
+    "ecommerce_enabled": false,
+    "ecommerce_note": "Todas las referencias a tienda en línea, carrito de compra o pasarela de pagos quedan excluidas para esta etapa. El sitio se enfoca 100% en catálogo técnico, consulta de especificaciones y solicitud de cotización/asesoría especializada."
+  },
+  "brand_identity": {
+    "colors": {
+      "primary": "#30afb8",
+      "primary_dark": "#21858c",
+      "accent": "#5fbbf4",
+      "slate_dark": "#313b48",
+      "text_dark": "#242424",
+      "background_light": "#fcfcfc"
+    },
+    "logo": "APG Quimica – Quimica. S.A. de C.V._files/APG-quimica.png"
+  },
+  "contact": {
+    "address": "Pedro Escobedo - Santiago de Querétaro, C.P. 76240 Querétaro, México",
+    "google_maps_url": "https://goo.gl/maps/2cTgQ7kU1HLpAzWt6",
+    "phones": [
+      "+52 442 218 1700",
+      "+52 442 395 2609"
+    ],
+    "email": "apgquimica@prodigy.net.mx",
+    "social": {
+      "whatsapp": "https://bit.ly/apg_wa",
+      "facebook": "https://www.facebook.com/apgquimicasadecv/",
+      "instagram": "https://www.instagram.com/apg_quimica/",
+      "linkedin": "https://www.linkedin.com/company/apgquimica/"
+    }
+  },
+  "navigation_menu": [
+    {
+      "title": "INICIO",
+      "href": "#masthead"
+    },
+    {
+      "title": "MERCADOS",
+      "href": "#mercados"
+    },
+    {
+      "title": "NOSOTROS",
+      "href": "#nosotros"
+    },
+    {
+      "title": "LABORATORIO",
+      "href": "#laboratorio"
+    },
+    {
+      "title": "ANTIFROGEN N",
+      "href": "#antifrogen"
+    },
+    {
+      "title": "CONTACTO",
+      "href": "#contacto"
+    }
+  ],
+  "about_us": {
+    "title": "Nosotros",
+    "lead": "Somos una empresa con más de 20 años de experiencia en la comercialización de productos químicos especializados para diferentes mercados.",
+    "description": "Estamos comprometidos con la calidad de los productos que distribuimos, ofreciendo soluciones personalizadas a nuestros clientes mientras mantenemos la armonía con el medio ambiente a través de productos ecológicos y políticas medioambientales.",
+    "partner": "Somos representantes de la marca Clariant, una empresa líder mundial en especialidades químicas, con productos sustentables y con un valor agregado para cubrir necesidades específicas de diversos mercados en el sector industrial; tal como, certificados y asesorías técnicas.",
+    "value_proposition": "Todo esto nos ha llevado a obtener la preferencia de los clientes por nuestros productos y servicios innovadores, desarrollados sobre medida para atender a las necesidades actuales y futuras de los más variados sectores y mercados.",
+    "image": "APG Quimica – Quimica. S.A. de C.V._files/pexels-polina-tankilevitch-3735709_1-1024x682.jpg"
+  },
+  "vision_mission": {
+    "vision": {
+      "title": "VISIÓN",
+      "text": "Ser una empresa sustentable, generadora de soluciones técnicas y servicios específicos para tu negocio. Ofrecer productos con calidad y sustentables; comprometidos con la sociedad, y el cuidado del medio ambiente."
+    },
+    "mission": {
+      "title": "MISIÓN",
+      "text": "Ser una empresa comprometida para atender las necesidades específicas en la industria en general con cada cliente. Renovamos continuamente nuestro portafolio de productos, servicios y aplicaciones, ofreciendo soluciones a la medida para las más variadas demandas. Siempre en constante contacto con nuestros clientes para entender sus necesidades inmediatas, sus objetivos y metas de mediano y largo plazo; agregando valor a sus negocios."
+    }
+  },
+  "laboratory": {
+    "title": "Nuestro Laboratorio",
+    "description": "Contamos con un laboratorio de soporte técnico que atiende las necesidades específicas de cada uno de nuestros clientes. Nuestro laboratorio cuenta con los equipos necesarios para realizar pruebas de aplicación, pruebas de estabilidad y mediciones fisicoquímicas básicas que determinan la calidad de nuestros productos.",
+    "capabilities": [
+      "Soporte técnico especializado",
+      "Pruebas de aplicación en producto final",
+      "Pruebas de estabilidad acelerada y estándar",
+      "Mediciones fisicoquímicas básicas y control de calidad",
+      "Desarrollo y ajuste de formulaciones a la medida"
+    ],
+    "images": [
+      "APG Quimica – Quimica. S.A. de C.V._files/nuestro-laboratorio-1.jpg",
+      "APG Quimica – Quimica. S.A. de C.V._files/nuestro-laboratorio-2.jpg",
+      "APG Quimica – Quimica. S.A. de C.V._files/nuestro-laboratorio-3.jpg"
+    ]
+  },
+  "flagship_product": {
+    "title": "ANTIFROGEN® - CLARIANT",
+    "subtitle": "Fluido de transferencia de calor",
+    "brand": "Clariant",
+    "description": "Antifrogen N del fabricante es un líquido anticongelante con inhibidores de corrosión. Puede ser aplicado en intercambiadores de calor, sistemas de refrigeración, sistemas de recuperación de calor, etc. Antifrogen N no es adecuado para usos que tengan contacto con alimentos o fármacos. El producto no contiene sustancias CMR (cancerígenas, mutagénicas, reprotóxicas).",
+    "features": [
+      "Fluido de transferencia de calor de alto rendimiento",
+      "Líquido anticongelante con inhibidores de corrosión premium",
+      "Libre de sustancias CMR (Carcinógenas, mutagénicas, reprotóxicas)",
+      "Aplicaciones en intercambiadores de calor, sistemas de refrigeración industrial y recuperación térmica",
+      "Variante para grado alimenticio disponible: Antifrogen L"
+    ],
+    "image": "APG Quimica – Quimica. S.A. de C.V._files/antifrogen.jpg"
+  },
+  "markets_served": {
+    "section_title": "Algunos de los Mercados que Servimos",
+    "overview": [
+      "Actualmente, atendemos las necesidades de suministro en productos químicos de origen natural y materias primas para la industria.",
+      "Hoy en día, logramos satisfacer la demanda de múltiples industrias manufactureras como metalurgia, construcción, aditivos, ceras, cultivos, pigmentos, revestimientos, cueros – calzado, cerámica, cuidado del hogar, cuidado personal y tratamiento de aguas.",
+      "Con tal fin, en APG Química aplicamos rigurosos controles de calidad y limpieza durante la fabricación y almacenaje de nuestro producto.",
+      "Como resultado aseguramos una solución integral y precisa para cada requerimiento mediante la comercialización de productos y servicios de fabricantes líderes a nivel mundial con calidad certificada."
+    ],
+    "industries": [
+      {
+        "id": "metalurgia",
+        "name": "Metalurgia",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/METALWORKING.jpg",
+        "description": "Antifrogen N: Líquido refrigerante con inhibidores de corrosión. No contiene substancias CMR (Carcinógenas, mutágenos y tóxicas para la reproducción). Se aplica en sistemas de calentamiento de agua y en equipo de refrigeración industrial. Para su uso en aplicaciones de alimentos se recomienda el Antifrogen L. También contamos con materias primas para la limpieza de Metales.",
+        "keywords": [
+          "Antifrogen N",
+          "Antifrogen L",
+          "Refrigeración industrial",
+          "Limpieza de metales",
+          "Inhibidores de corrosión"
+        ]
+      },
+      {
+        "id": "aditivos",
+        "name": "Aditivos",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/aditivos.jpg",
+        "description": "Manejamos para los sectores de Agricultura, construcción, textil, coatings y ceras. Contamos con retardantes de llama, aditivos para plásticos y recubrimientos: estabilizadores térmicos, protección contra el sol y la oxidación, estabilizadores, etc.",
+        "keywords": [
+          "Retardantes de llama",
+          "Estabilizadores térmicos",
+          "Protección UV",
+          "Antioxidantes",
+          "Plásticos y recubrimientos"
+        ]
+      },
+      {
+        "id": "cultivos",
+        "name": "Cultivos",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/crop.jpg",
+        "description": "Desarrollamos soluciones sustentables para la protección de cultivos, herbicidas, insecticidas, fungicidas, fertilizantes y tratamiento de semillas; además de agentes de dispersión y adyuvantes para un mejor rendimiento de pesticidas.",
+        "keywords": [
+          "Agroquímicos",
+          "Protección de cultivos",
+          "Herbicidas",
+          "Fertilizantes",
+          "Adyuvantes y dispersantes"
+        ]
+      },
+      {
+        "id": "revestimientos",
+        "name": "Revestimientos",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/coatings.jpg",
+        "description": "Ofrecemos emulsificantes, pigmentos y ceras para responder al mercado de pinturas y revestimientos. Así como aditivos que funcionan como agentes humectantes, dispersantes, estabilizadores, neutralizadores, antiespumantes y espesantes.",
+        "keywords": [
+          "Pinturas",
+          "Coatings",
+          "Emulsificantes",
+          "Humectantes",
+          "Dispersantes",
+          "Antiespumantes",
+          "Espesantes"
+        ]
+      },
+      {
+        "id": "ceramica",
+        "name": "Cerámica",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/Ceramica.jpg",
+        "description": "Pigmentos y Aditivos para darle mayor nitidez y vida a los azulejos. Así como dispersantes, antiespumantes y mejoradores de molienda.",
+        "keywords": [
+          "Azulejos",
+          "Cerámica",
+          "Mejoradores de molienda",
+          "Dispersantes",
+          "Pigmentos cerámicos"
+        ]
+      },
+      {
+        "id": "tratamiento-agua",
+        "name": "Tratamiento de Aguas",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/tratamiento-agua.jpg",
+        "description": "Productos químicos para el tratamiento de agua: Antiespumantes, cuaternarios de amonio (desinfectantes).",
+        "keywords": [
+          "Antiespumantes",
+          "Cuaternarios de amonio",
+          "Desinfección",
+          "Tratamiento de efluentes"
+        ]
+      },
+      {
+        "id": "construccion",
+        "name": "Construcción",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/construccion.jpg",
+        "description": "Materiales para optimizar la construcción de edificios de una manera más eficiente, segura y sustentable. Contamos con las siguientes materias primas: Aditivos, estabilizadores, poliglicoles, dispersantes, emulsiones y antiespumantes.",
+        "keywords": [
+          "Poliglicoles",
+          "Aditivos de construcción",
+          "Emulsiones",
+          "Edificación sustentable"
+        ]
+      },
+      {
+        "id": "ceras",
+        "name": "Ceras",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/ceras.jpg",
+        "description": "Amplia gama innovadora de ceras sintéticas y semi sintéticas de alto rendimiento. Productos basados en cera montana, de amidas y ceras basadas en poliolefinas y polímeros.",
+        "keywords": [
+          "Cera montana",
+          "Ceras de amidas",
+          "Poliolefinas",
+          "Ceras sintéticas"
+        ]
+      },
+      {
+        "id": "pigmentos",
+        "name": "Pigmentos",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/pigmentos.jpg",
+        "description": "Gran variedad de pigmentos, desde económicas hasta el más alto rendimiento, base agua o solvente. Soluciones para la resistencia del color y otros retos en la fabricación de revestimientos.",
+        "keywords": [
+          "Base agua",
+          "Base solvente",
+          "Resistencia de color",
+          "Colorantes industriales"
+        ]
+      },
+      {
+        "id": "cuero-calzado",
+        "name": "Cuero y Calzado",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/Cuero-y-Calzado.jpg",
+        "description": "Producto para el procesamiento del cuero en todas sus etapas, como tensoactivos, emulsionantes, aditivos para recurtido, agentes neutralizadores y humectantes, detergentes, dispersantes de colorantes, recurtientes. Además de los materiales necesarios para el calzado y formulaciones de adhesivos para suelas.",
+        "keywords": [
+          "Curtiduría",
+          "Recurtido",
+          "Tensoactivos",
+          "Adhesivos para suelas",
+          "Calzado"
+        ]
+      },
+      {
+        "id": "cuidado-hogar",
+        "name": "Cuidado del Hogar",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/home-care.jpg",
+        "description": "Soluciones prácticas de alto rendimiento, sustentables y eficientes en los segmentos de cuidado del hogar y limpieza industrial e institucional. Amplia gama de productos, desde polímeros, óxidos de aminas, surfactantes suaves y a base de azúcar 100% naturales, antiespumantes, biocidas, activos y conservadores.",
+        "keywords": [
+          "Home Care",
+          "Limpieza institucional",
+          "Surfactantes naturales",
+          "Biocidas",
+          "Óxidos de aminas"
+        ]
+      },
+      {
+        "id": "cuidado-personal",
+        "name": "Cuidado Personal",
+        "image": "APG Quimica – Quimica. S.A. de C.V._files/personal-care.jpg",
+        "description": "Ingredientes cosméticos: Agentes activos como humectantes y emolientes, emulsificadores formadores, de película, aperlantes, conservadores, surfactantes suaves y agentes acondicionadores para cabello. Así como soluciones específicas para hombres, bebés, protección solar, tratamientos capilares y faciales.",
+        "keywords": [
+          "Cosmética",
+          "Personal Care",
+          "Emolientes",
+          "Humectantes",
+          "Acondicionadores",
+          "Protección solar"
+        ]
+      }
+    ]
+  },
+  "contact_form": {
+    "title": "Contáctanos",
+    "fields": [
+      {
+        "name": "nombre",
+        "label": "Nombre",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "telefono",
+        "label": "Teléfono",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "name": "correo",
+        "label": "Correo",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "mensaje",
+        "label": "Mensaje",
+        "type": "textarea",
+        "required": true
+      }
+    ],
+    "button_text": "Enviar"
+  },
+  "prompt_generator_briefing": {
+    "core_offer_and_conversion": {
+      "what_selling": "B2B commercialization, technical distribution, and custom formulation support of specialized chemical products, natural raw materials, and industrial additives across 12 sectors, with in-house laboratory testing and Clariant representation (including Antifrogen N & L).",
+      "primary_conversion_action": "Requesting a specialized technical quote / formulation consultation ('Solicitar Cotización / Asesoría Técnica') through an interactive lead form or 1-tap WhatsApp connection to technical sales engineers."
+    },
+    "target_audience_and_psychology": {
+      "ideal_customer": "B2B procurement heads, plant managers, R&D chemists, and chemical formulation engineers in manufacturing enterprises across Mexico and LATAM.",
+      "emotional_state": "Analytical, risk-averse, and urgent/solution-seeking. Facing formulation bottlenecks, foam issues, thermal instability, or environmental/CMR compliance hurdles.",
+      "biggest_hesitations": "Risk of formulation incompatibility, batch-to-batch variation, regulatory non-compliance, and dealing with unverified distributors lacking real lab backing."
+    },
+    "authority_and_trust_signals": [
+      "20+ years of proven market track record in Mexican manufacturing.",
+      "Official representation and technical backing of global specialty chemical leader Clariant.",
+      "In-house technical support laboratory for application testing, stability testing, and physicochemical quality analysis.",
+      "Strict quality and cleanliness protocols in chemical handling and warehousing.",
+      "Non-CMR certified formulations (zero carcinogenic, mutagenic, or reprotoxic substances) and sustainable eco-friendly raw materials.",
+      "Strategic industrial location in Querétaro, Mexico."
+    ],
+    "brand_identity_and_aesthetic": {
+      "three_words": "Authoritative, Technical, Sustainable",
+      "primary_brand_colors": {
+        "primary_teal": "#30afb8",
+        "interactive_teal_dark": "#21858c",
+        "accent_sky_blue": "#5fbbf4",
+        "dark_slate_charcoal": "#313b48",
+        "body_text": "#242424",
+        "clean_background": "#ffffff / #fcfcfc"
+      }
+    },
+    "desktop_vs_mobile_priorities": {
+      "desktop_narrative_priorities": [
+        "Interactive 12-industry solutions matrix with hover expansions and instant technical application previews.",
+        "Scroll-triggered interactive laboratory showcase with testing methodologies and quality metrics.",
+        "Antifrogen Clariant technical teardown comparing Antifrogen N vs Antifrogen L and explaining non-CMR benefits."
+      ],
+      "mobile_fastest_path_to_conversion": [
+        "Persistent bottom conversion bar with 1-tap WhatsApp consultation pre-filling product/market context.",
+        "Frictionless 30-second mobile modal form with only 3 fields (Name, Phone/WhatsApp, Product of interest)."
+      ]
+    }
+  }
+}

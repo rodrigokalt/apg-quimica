@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color Variables */
+  --brand-teal: #30afb8;
+  --brand-teal-dark: #21858c;
+  --brand-accent-blue: #5fbbf4;
+  --brand-slate: #313b48;
+  --text-dark: #242424;
+  --bg-clean: #ffffff;
+  --bg-offwhite: #fcfcfc;
+
+  /* Extended System Palette */
+  --brand-teal-glow: rgba(48, 175, 184, 0.15);
+  --brand-slate-light: #445163;
+  --border-light: rgba(49, 59, 72, 0.12);
+  --text-muted: #5e6d82;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', Menlo, Consolas, monospace;
+
+  /* Motion & Dynamics */
+  --ease-custom: cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-fast: 0.22s var(--ease-custom);
+  --transition-smooth: 0.4s var(--ease-custom);
+  --transition-slow: 0.65s var(--ease-custom);
+
+  /* Elevation */
+  --shadow-sm: 0 2px 8px rgba(49, 59, 72, 0.06);
+  --shadow-md: 0 8px 24px rgba(49, 59, 72, 0.09);
+  --shadow-lg: 0 16px 40px rgba(49, 59, 72, 0.14);
+  --shadow-teal: 0 8px 30px rgba(48, 175, 184, 0.25);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-offwhite);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Monospace Utility for Technical Precision */
+.tech-mono {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+/* Headings with Clinical Authority */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  color: var(--brand-slate);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom Selection */
+::selection {
+  background: var(--brand-teal);
+  color: #ffffff;
+}
+
+/* Battery Saver / Reduced Motion Enforcement */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

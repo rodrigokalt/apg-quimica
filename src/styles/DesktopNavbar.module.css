@@ -1,0 +1,127 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.topBar {
+  background: var(--brand-slate);
+  color: #ffffff;
+  padding: 6px 32px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topBarContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.badgePartner {
+  background: rgba(48, 175, 184, 0.2);
+  color: var(--brand-teal);
+  border: 1px solid rgba(48, 175, 184, 0.4);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.topBarLink {
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.topBarLink:hover {
+  color: var(--brand-accent-blue);
+}
+
+.navContainer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoImg {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.navItem a {
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: var(--brand-slate);
+  padding: 6px 0;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.navItem a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--brand-teal);
+  transition: width var(--transition-fast);
+}
+
+.navItem a:hover {
+  color: var(--brand-teal);
+}
+
+.navItem a:hover::after {
+  width: 100%;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ctaQuote {
+  background: var(--brand-teal);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  box-shadow: 0 4px 14px rgba(48, 175, 184, 0.3);
+  transition: all var(--transition-smooth);
+}
+
+.ctaQuote:hover {
+  background: var(--brand-teal-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(48, 175, 184, 0.4);
+}

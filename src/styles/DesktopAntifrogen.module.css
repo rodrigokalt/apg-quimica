@@ -1,0 +1,219 @@
+.section {
+  padding: 100px 32px;
+  background: radial-gradient(circle at 90% 10%, rgba(48, 175, 184, 0.08) 0%, transparent 50%),
+              radial-gradient(circle at 10% 90%, rgba(49, 59, 72, 0.06) 0%, transparent 60%),
+              var(--bg-clean);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.topBadgeRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.brandBadge {
+  background: var(--brand-slate);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cmrBadge {
+  background: rgba(48, 175, 184, 0.12);
+  border: 1px solid var(--brand-teal);
+  color: var(--brand-teal-dark);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 50px;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--brand-slate);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--brand-teal-dark);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.featuresList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.93rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.featureCheck {
+  color: var(--brand-teal);
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.actionRow {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.quoteBtn {
+  background: var(--brand-teal);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.quoteBtn:hover {
+  background: var(--brand-teal-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Right Column: Monospace Engineering Table */
+.rightCol {
+  background: var(--bg-clean);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.tableTitle {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--brand-slate);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tableTag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--brand-teal);
+  background: rgba(48, 175, 184, 0.1);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.specsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.specsTable th {
+  text-align: left;
+  padding: 10px 12px;
+  background: var(--bg-offwhite);
+  color: var(--brand-slate);
+  font-weight: 700;
+  border-bottom: 2px solid var(--border-light);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.specsTable td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-dark);
+  vertical-align: top;
+}
+
+.specsTable tr:hover td {
+  background: rgba(48, 175, 184, 0.04);
+}
+
+.paramCol {
+  font-weight: 600;
+  color: var(--brand-slate);
+  width: 32%;
+}
+
+.valNCol {
+  color: var(--brand-teal-dark);
+  width: 34%;
+}
+
+.valLCol {
+  color: var(--brand-slate-light);
+  width: 34%;
+}
+
+.productImgCard {
+  margin-top: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  position: relative;
+  height: 180px;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
